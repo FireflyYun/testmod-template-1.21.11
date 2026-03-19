@@ -12,14 +12,9 @@ public class ModItems {
     public static final Item POPCORN = register("popcorn",Item::new , new Item.Settings());
 
     public static Item register(String path, Function<Item.Settings, Item> factory, Item.Settings settings) {
-
         final RegistryKey<Item> registryKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of("testmod", path));
-
         return Items.register(registryKey, factory, settings);
-
     }
-
-
 
     public static void initialize() {
 
