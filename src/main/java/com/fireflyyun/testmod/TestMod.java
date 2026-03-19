@@ -1,8 +1,11 @@
 package com.fireflyyun.testmod;
 
 import com.fireflyyun.testmod.item.ModItems;
+import com.fireflyyun.testmod.item.Popcorn;
+import com.fireflyyun.testmod.sound.ModSounds;
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.item.Item;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,6 +22,7 @@ public class TestMod implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+		ModSounds.initialize();
 		ModItems.initialize();
 		LOGGER.info("Hello Fabric world!");
 	}

@@ -1,0 +1,8 @@
+{
+  "popcorn.crunch": {
+    "sounds": [
+      "testmod:popcorn_crunch"
+    ],
+    "subtitle": "testmod.subtitle.popcorn_crunch"
+  }
+}
