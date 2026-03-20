@@ -1,3 +1,4 @@
 {
-  "item.testmod.popcorn": "Popcorn"
+  "item.testmod.popcorn": "Popcorn",
+  "block.testmod.popcorn_block": "Popcorn Block"
 }

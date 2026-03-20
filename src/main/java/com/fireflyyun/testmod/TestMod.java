@@ -1,5 +1,6 @@
 package com.fireflyyun.testmod;
 
+import com.fireflyyun.testmod.block.ModBlocks;
 import com.fireflyyun.testmod.item.ModItems;
 import com.fireflyyun.testmod.item.Popcorn;
 import com.fireflyyun.testmod.sound.ModSounds;
@@ -24,6 +25,7 @@ public class TestMod implements ModInitializer {
 		// Proceed with mild caution.
 		ModSounds.initialize();
 		ModItems.initialize();
+		ModBlocks.init();
 		LOGGER.info("Hello Fabric world!");
 	}
 }

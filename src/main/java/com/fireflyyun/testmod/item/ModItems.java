@@ -1,6 +1,9 @@
 package com.fireflyyun.testmod.item;
 
+import com.fireflyyun.testmod.TestMod;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -17,6 +20,7 @@ public class ModItems {
     }
 
     public static void initialize() {
-
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(content -> {
+            content.addBefore(Items.APPLE, ModItems.POPCORN);});
     }
 }
